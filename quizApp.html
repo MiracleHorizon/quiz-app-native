@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/main_blocks.css" />
+        <link rel="stylesheet" href="/styles/header.css" />
+        <link rel="stylesheet" href="/styles/questions.css" />
+        <link rel="stylesheet" href="/styles/answer_inputs.css" />
+        <link rel="stylesheet" href="/styles/footer.css" />
+        <link rel="stylesheet" href="/styles/clear_base_styles.css" />
+        <script src="https://kit.fontawesome.com/7a5a382167.js" crossorigin="anonymous"></script>
+        <title>Quiz App</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="questions-block" class="questions_block">
+                <header id="header" class="header">
+                    <h1 id="app-title">Quiz Application</h1>
+                    <h1 id="error-title">choose an answer</h1>
+                    <h1 id="question-title" class="question_title_header"></h1>
+                </header>
+                <div id="start-test-block" class="start_test_block">
+                    <h1 class="start_test_title">
+                        Welcome! <br />
+                        What test do you want to take?
+                    </h1>
+                    <div class="start_buttons_block">
+                        <button id="html-test-button">
+                            <span>
+                                <i class="fa-brands fa-html5" style="font-size: 30px; color: rgb(255, 115, 0)"></i>
+                            </span>
+                            <span>HTML Basics</span>
+                        </button>
+                        <button id="css-test-button">
+                            <span>
+                                <i class="fa-brands fa-css3" style="font-size: 30px; color: rgb(93, 181, 239)"></i>
+                            </span>
+                            <span>CSS Basics</span>
+                        </button>
+                        <button id="javaScript-test-button">
+                            <span>
+                                <i class="fa-brands fa-js-square" style="font-size: 30px; color: rgb(255, 230, 42)"></i>
+                            </span>
+                            <span>JavaScript Basics</span>
+                        </button>
+                        <button id="react-test-button">
+                            <span>
+                                <i class="fa-brands fa-react" style="font-size: 30px; color: rgb(93, 181, 239)"></i>
+                            </span>
+                            <span>ReactJS Basics</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="test-results" class="test_results" style="display: none">
+                    <h1 id="results-title"></h1>
+                    <h1 id="results-commentary"></h1>
+                    <div id="return-to-start-block">
+                        <input
+                            type="submit"
+                            name="return_to_start"
+                            value="Take another test"
+                            id="return-to-start-button"
+                        />
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                    </div>
+                </div>
+                <form id="questions-form" class="questions_form" action="#" style="display: none">
+                    <ol class="answers_list">
+                        <li class="answer">
+                            <input type="radio" name="radio" id="first-answer" class="answer_input" value="1" />
+                            <label for="first-answer" id="first-answer-babel" class="answer_title">
+                                <span id="first-answer-title"></span>
+                            </label>
+                            <div class="answer_icons">
+                                <i id="correct-answer-icon" class="fa-regular fa-circle-check"></i>
+                                <i id="incorrect-answer-icon" class="fa-regular fa-circle-xmark"></i>
+                            </div>
+                        </li>
+                        <li class="answer">
+                            <input type="radio" name="radio" id="second-answer" class="answer_input" value="2" />
+                            <label for="second-answer" id="second-answer-label" class="answer_title">
+                                <span id="second-answer-title"></span>
+                            </label>
+                            <div class="answer_icons">
+                                <i id="correct-answer-icon" class="fa-regular fa-circle-check"></i>
+                                <i id="incorrect-answer-icon" class="fa-regular fa-circle-xmark"></i>
+                            </div>
+                        </li>
+                        <li class="answer">
+                            <input type="radio" name="radio" id="third-answer" class="answer_input" value="3" />
+                            <label for="third-answer" class="answer_title" id="third-answer-label">
+                                <span id="third-answer-title"></span>
+                            </label>
+                            <div class="answer_icons">
+                                <i id="correct-answer-icon" class="fa-regular fa-circle-check"></i>
+                                <i id="incorrect-answer-icon" class="fa-regular fa-circle-xmark"></i>
+                            </div>
+                        </li>
+                        <li class="answer">
+                            <input type="radio" name="radio" id="fourth-answer" class="answer_input" value="4" />
+                            <label for="fourth-answer" class="answer_title" id="fourth-answer-label">
+                                <span id="fourth-answer-title"></span>
+                            </label>
+                            <div class="answer_icons">
+                                <i id="correct-answer-icon" class="fa-regular fa-circle-check"></i>
+                                <i id="incorrect-answer-icon" class="fa-regular fa-circle-xmark"></i>
+                            </div>
+                        </li>
+                    </ol>
+                </form>
+                <footer id="footer" class="footer" style="display: none">
+                    <h1 class="question_number">
+                        <span id="test-current-question">1</span> of
+                        <span id="total-test-questions-title">1</span> Questions
+                    </h1>
+                    <div id="submit-answer-button-block">
+                        <input type="submit" name="submit_answer" value="Submit" id="submit-answer-button" />
+                    </div>
+                    <div id="next-question-button-block">
+                        <input type="submit" name="next_question" value="Next Que" id="next-question-button" />
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+    <script src="./quizApp.js" type="module"></script>
+    <script src="./data.js" type="module"></script>
+    <script src="./utilities.js" type="module"></script>
+</html>

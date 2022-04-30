@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgb(36, 151, 228), rgb(108, 158, 192));
+}
+
+.wrapper {
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    width: 700px;
+    height: 580px;
+    box-shadow: 0 0 5px rgb(74, 74, 74);
+    border-radius: 5px;
+}
+
+.start_test_block {
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    flex-direction: inherit;
+    width: 600px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.start_test_title {
+    margin-bottom: 2.5rem;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 1px 2px #ccc;
+    line-height: 40px;
+    color: #3a3f58;
+}
+
+.start_buttons_block {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    grid-auto-rows: 70px;
+    gap: 0 20px;
+}
+
+.start_buttons_block button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 15.3rem;
+    height: 3.2rem;
+    box-shadow: 0 0 5px rgb(74, 74, 74);
+    /* margin: 0 10px; */
+    border-radius: 10px;
+    background-color: #3a3f58;
+}
+
+.start_buttons_block button:hover {
+    background-color: #4a5273;
+    transition: all ease-in-out 0.3s;
+}
+
+.start_buttons_block span {
+    padding-left: 8px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.test_results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 700px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.test_results h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 1px 2px #ccc;
+    line-height: 50px;
+    color: #3a3f58;
+}
+
+#return-to-start-block {
+    cursor: pointer;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    bottom: 5px;
+    width: 16rem;
+    height: 2.8rem;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+#return-to-start-block input {
+    cursor: inherit;
+    width: inherit;
+    height: inherit;
+    padding-left: 12px;
+    border-radius: inherit;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    background-color: #3a3f58;
+}
+
+#return-to-start-block input:hover {
+    background-color: #525977;
+    transition: all ease-in-out 0.3s;
+}
+
+#return-to-start-block i {
+    cursor: inherit;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 21px;
+    color: rgb(251, 178, 105);
+}

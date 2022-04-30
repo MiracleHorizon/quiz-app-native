@@ -1,0 +1,134 @@
+.questions_block {
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #ffffff;
+}
+
+.questions_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 30px;
+    width: 600px;
+    height: 300px;
+}
+
+.question_title_header {
+    position: absolute;
+    top: 115px;
+    left: 50px;
+    width: 600px;
+    height: 50px;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: left;
+    color: #3a3f58;
+}
+
+.answers_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: inherit;
+    height: 300px;
+}
+
+.answer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 600px;
+    height: 4.2rem;
+    margin: 0.6rem 0;
+    padding: 0 20px;
+    border: 1px inset rgba(0, 128, 255, 0.3);
+    border-radius: 5px;
+    background-color: rgba(0, 128, 255, 0.09);
+}
+
+.answer:hover {
+    background-color: rgba(0, 128, 255, 0.17);
+    transition: all ease-in-out 0.1s;
+}
+
+.answer.correct {
+    border: 1px inset rgba(2, 137, 2, 0.3);
+    background-color: rgba(2, 137, 2, 0.12);
+}
+
+.answer.correct:hover {
+    background-color: rgba(2, 137, 2, 0.2);
+}
+
+.answer.unselected_correct {
+    border: 1px inset rgba(0, 128, 255, 0.2);
+    background-color: rgb(250, 255, 222);
+}
+
+.answer.unselected_correct {
+    background-color: rgba(255, 249, 74, 0.1);
+}
+
+.answer.unselected_correct:hover {
+    background-color: rgba(255, 249, 74, 0.3);
+}
+
+.answer.incorrect {
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.answer.incorrect:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.answer_title {
+    cursor: pointer;
+    width: 520px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 22px;
+    letter-spacing: 2px;
+}
+
+.answer span {
+    display: flex;
+    align-items: center;
+    height: 4.1rem;
+}
+
+.answer_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.answer_icons i {
+    position: absolute;
+    font-size: 25px;
+}
+
+#correct-answer-icon {
+    display: none;
+    color: forestgreen;
+    opacity: 0.4;
+}
+
+#incorrect-answer-icon {
+    display: none;
+    color: red;
+    opacity: 0.4;
+}

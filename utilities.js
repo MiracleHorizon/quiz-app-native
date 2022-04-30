@@ -19,9 +19,9 @@ function showSubmitError() {
     let errorOpacity = 2;
 
     errorTitle.style.display = 'initial';
-    const timedId = setInterval(() => {
+    const timerId = setInterval(() => {
         if (errorOpacity <= 0) {
-            clearInterval(timedId);
+            clearInterval(timerId);
         }
         errorOpacity -= 0.05;
         errorTitle.style.opacity = errorOpacity;

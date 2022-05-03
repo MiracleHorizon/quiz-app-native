@@ -18,8 +18,8 @@
 
 .answer input[type='radio']::before {
     content: '';
-    width: 0.6em;
-    height: 0.6em;
+    width: 0.7em;
+    height: 0.7em;
     border-radius: 50%;
     transform: scale(0);
     transition: 120ms transform ease-in-out;

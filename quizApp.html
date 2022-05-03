@@ -16,10 +16,10 @@
     <body>
         <div class="wrapper">
             <div id="questions-block" class="questions_block">
-                <header id="header" class="header">
+                <header style="display: none">
                     <h1 id="app-title">Quiz Application</h1>
                     <h1 id="error-title">choose an answer</h1>
-                    <h1 id="question-title" class="question_title_header"></h1>
+                    <h1 id="question-title" class="question_title_header">#</h1>
                 </header>
                 <div id="start-test-block" class="start_test_block">
                     <h1 class="start_test_title">
@@ -29,103 +29,98 @@
                     <div class="start_buttons_block">
                         <button id="html-test-button">
                             <span>
-                                <i class="fa-brands fa-html5" style="font-size: 30px; color: rgb(255, 115, 0)"></i>
+                                <i class="fa-brands fa-html5" style="color: rgb(255, 115, 0)"></i>
                             </span>
                             <span>HTML Basics</span>
                         </button>
                         <button id="css-test-button">
                             <span>
-                                <i class="fa-brands fa-css3" style="font-size: 30px; color: rgb(93, 181, 239)"></i>
+                                <i class="fa-brands fa-css3" style="color: rgb(93, 181, 239)"></i>
                             </span>
                             <span>CSS Basics</span>
                         </button>
                         <button id="javaScript-test-button">
                             <span>
-                                <i class="fa-brands fa-js-square" style="font-size: 30px; color: rgb(255, 230, 42)"></i>
+                                <i class="fa-brands fa-js-square" style="color: rgb(255, 230, 42)"></i>
                             </span>
                             <span>JavaScript Basics</span>
                         </button>
                         <button id="react-test-button">
                             <span>
-                                <i class="fa-brands fa-react" style="font-size: 30px; color: rgb(93, 181, 239)"></i>
+                                <i class="fa-brands fa-react" style="color: rgb(93, 181, 239)"></i>
                             </span>
                             <span>ReactJS Basics</span>
                         </button>
                     </div>
                 </div>
-                <div id="test-results" class="test_results" style="display: none">
-                    <h1 id="results-title"></h1>
-                    <h1 id="results-commentary"></h1>
+                <div id="test-results-block" class="test_results" style="display: none">
+                    <h1 id="results-title">#</h1>
+                    <h1 id="results-commentary">#</h1>
                     <div id="return-to-start-block">
-                        <input
-                            type="submit"
-                            name="return_to_start"
-                            value="Take another test"
-                            id="return-to-start-button"
-                        />
+                        <input id="return-to-start-button" name="to-start" type="submit" value="Take another test" />
                         <i class="fa-solid fa-arrow-rotate-left"></i>
                     </div>
                 </div>
                 <form id="questions-form" class="questions_form" action="#" style="display: none">
-                    <ol class="answers_list">
+                    <ul class="answers_list">
                         <li class="answer">
-                            <input type="radio" name="radio" id="first-answer" class="answer_input" value="1" />
-                            <label for="first-answer" id="first-answer-babel" class="answer_title">
+                            <input id="first-answer" class="answer_input" name="radio" type="radio" value="1" />
+                            <label for="first-answer" class="answer_title">
                                 <span id="first-answer-title"></span>
                             </label>
                             <div class="answer_icons">
-                                <i id="correct-answer-icon" class="fa-regular fa-circle-check"></i>
-                                <i id="incorrect-answer-icon" class="fa-regular fa-circle-xmark"></i>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <i class="fa-regular fa-circle-xmark"></i>
                             </div>
                         </li>
                         <li class="answer">
-                            <input type="radio" name="radio" id="second-answer" class="answer_input" value="2" />
-                            <label for="second-answer" id="second-answer-label" class="answer_title">
+                            <inputid id="second-answer" class="answer_input" name="radio" type="radio" value="2" />
+                            <label for="second-answer" class="answer_title">
                                 <span id="second-answer-title"></span>
                             </label>
                             <div class="answer_icons">
-                                <i id="correct-answer-icon" class="fa-regular fa-circle-check"></i>
-                                <i id="incorrect-answer-icon" class="fa-regular fa-circle-xmark"></i>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <i class="fa-regular fa-circle-xmark"></i>
                             </div>
                         </li>
                         <li class="answer">
-                            <input type="radio" name="radio" id="third-answer" class="answer_input" value="3" />
-                            <label for="third-answer" class="answer_title" id="third-answer-label">
+                            <input id="third-answer" class="answer_input" name="radio" type="radio" value="3" />
+                            <label for="third-answer" class="answer_title">
                                 <span id="third-answer-title"></span>
                             </label>
                             <div class="answer_icons">
-                                <i id="correct-answer-icon" class="fa-regular fa-circle-check"></i>
-                                <i id="incorrect-answer-icon" class="fa-regular fa-circle-xmark"></i>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <i class="fa-regular fa-circle-xmark"></i>
                             </div>
                         </li>
                         <li class="answer">
-                            <input type="radio" name="radio" id="fourth-answer" class="answer_input" value="4" />
-                            <label for="fourth-answer" class="answer_title" id="fourth-answer-label">
+                            <input id="fourth-answer" class="answer_input" name="radio" type="radio" value="4" />
+                            <label for="fourth-answer" class="answer_title">
                                 <span id="fourth-answer-title"></span>
                             </label>
                             <div class="answer_icons">
-                                <i id="correct-answer-icon" class="fa-regular fa-circle-check"></i>
-                                <i id="incorrect-answer-icon" class="fa-regular fa-circle-xmark"></i>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <i class="fa-regular fa-circle-xmark"></i>
                             </div>
                         </li>
-                    </ol>
+                    </ul>
                 </form>
-                <footer id="footer" class="footer" style="display: none">
-                    <h1 class="question_number">
-                        <span id="test-current-question">1</span> of
-                        <span id="total-test-questions-title">1</span> Questions
+                <footer style="display: none">
+                    <h1 class="questions_info_title">
+                        <strong id="current-question-title">1</strong> of
+                        <strong id="total-test-questions-title">1</strong> Questions
                     </h1>
                     <div id="submit-answer-button-block">
-                        <input type="submit" name="submit_answer" value="Submit" id="submit-answer-button" />
+                        <input id="submit-answer-button" name="submit_answer" type="submit" value="Submit" />
                     </div>
                     <div id="next-question-button-block">
-                        <input type="submit" name="next_question" value="Next Que" id="next-question-button" />
+                        <input id="next-question-button" name="next_question" type="submit" value="Next Que" />
                     </div>
                 </footer>
             </div>
         </div>
+        <script src="./quizApp.js" type="module"></script>
+        <script src="./data.js" type="module"></script>
+        <script src="./utilities.js" type="module"></script>
     </body>
-    <script src="./quizApp.js" type="module"></script>
-    <script src="./data.js" type="module"></script>
-    <script src="./utilities.js" type="module"></script>
 </html>

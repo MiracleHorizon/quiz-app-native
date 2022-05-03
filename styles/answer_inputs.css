@@ -6,8 +6,8 @@
     appearance: none;
     display: grid;
     place-content: center;
-    width: 1.15em;
-    height: 1.15em;
+    width: 1.3em;
+    height: 1.3em;
     margin: 0;
     font: inherit;
     border: 0.1em solid currentColor;

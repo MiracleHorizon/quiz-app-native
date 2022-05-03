@@ -3,10 +3,10 @@ import { showSubmitError, questionContentHandler, SubmitError } from './utilitie
 export { questionsStorage, showResults };
 
 const startTestDivElement = document.querySelector('#start-test-block');
-const headerElement = document.querySelector('#header');
-const footerElement = document.querySelector('#footer');
+const headerElement = document.querySelector('header');
+const footerElement = document.querySelector('footer');
 const totalQuestionsTitle = document.querySelector('#total-test-questions-title');
-const currentQuestionTitle = document.querySelector('#test-current-question');
+const currentQuestionTitle = document.querySelector('#current-question-title');
 
 const htmlTestButton = document.querySelector('#html-test-button');
 const cssTestButton = document.querySelector('#css-test-button');
@@ -16,14 +16,14 @@ const reactTestButton = document.querySelector('#react-test-button');
 const questionsFormElement = document.querySelector('#questions-form');
 const answerLiElements = document.querySelectorAll('.answer');
 const answerInputs = document.querySelectorAll('.answer_input');
-const correctAnswerIcons = document.querySelectorAll('#correct-answer-icon');
-const incorrectAnswerIcons = document.querySelectorAll('#incorrect-answer-icon');
+const correctAnswerIcons = document.querySelectorAll('[class ="fa-regular fa-circle-check"]');
+const incorrectAnswerIcons = document.querySelectorAll('[class = "fa-regular fa-circle-xmark"]');
 
 const submitAnswerButton = document.querySelector('#submit-answer-button');
 const nextQuestionButton = document.querySelector('#next-question-button');
 const returnToStartButton = document.querySelector('#return-to-start-button');
 
-const testResultsDivElement = document.querySelector('#test-results');
+const testResultsDivElement = document.querySelector('#test-results-block');
 const resultsTitle = document.querySelector('#results-title');
 const resultsCommentary = document.querySelector('#results-commentary');
 
